@@ -48,6 +48,12 @@
 			<version>2.0.2</version>
 			<!-- Using version 3.0.0 or higher, the javax package does not exist and returns error loading "javax/validation/ValidatorFactory" -->
 		</dependency>
+		<dependency>
+			<groupId>org.jetbrains</groupId>
+			<artifactId>annotations</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
 
 	</dependencies>
 

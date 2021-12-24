@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,12 +45,14 @@ public class RoomController {
     }
 
     @PostMapping("/rooms")
-    public Room createRoom(@Valid @RequestBody Room room) {
-        return roomRepository.save(room);
+    public ResponseEntity<Room> createRoom(@Valid @RequestBody Room room) throws URISyntaxException {
+        final Room savedRoom = roomRepository.save(room);
+        URI location = new URI("/api/v1/rooms/"+savedRoom.getId());
+        return ResponseEntity.created(location).body(savedRoom);
     }
 
     @PutMapping("/rooms/{id}")
-    public ResponseEntity < Room > updateRoom(@PathVariable(value = "id") Long roomId,
+    public ResponseEntity<Room> updateRoom(@PathVariable(value = "id") Long roomId,
                                               @Valid @RequestBody Room roomDetails) throws ResourceNotFoundException {
         Room room = roomRepository.findById(roomId)
                 .orElseThrow(() -> new ResourceNotFoundException("Room not found for this id :: " + roomId));
