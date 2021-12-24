@@ -29,6 +29,7 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 * Adicionado o arquivo `system.properties` com a versão do Java para que o projeto possa ser carregado corretamente no [Heroku];
 * Na classe "Room" foi adicionado o atributo `link` e anotações lombok `@AllArgsConstructor`, `@NoArgsConstructor` e `@Setter`;
 * Na classe "ErrorDetails" foi utilizado a anotação lombok `@Getter`;
+* Na classe "RoomController" o método `createRoom()` foi alterado para que o mesmo retorne o HTTP Status "201 Created".
 
 Endpoints criados na API: 
 * Criar sala de reuniao: `POST` `/api/v1/rooms`
@@ -36,6 +37,8 @@ Endpoints criados na API:
 * Buscar uma sala pelo Id: `GET` `/api/v1/rooms/{id}`
 * Atualizar uma sala pelo Id: `PUT` `/api/v1/rooms/{id}`
 * Excluir uma sala pelo id: `DELETE` `/api/v1/rooms/{Id}`
+
+Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do Postman que já possuí modelos e testes de requisições HTTP. O arquivo está na pasta [postman](https://github.com/didifive/meetingroom-backend/tree/master/postman)
 
 Links Interessantes:
 * [Java 17 - Documentation]
