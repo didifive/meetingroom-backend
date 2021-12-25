@@ -34,7 +34,7 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 
 ---
 
-####Endpoints criados na API: 
+#### Endpoints criados na API: 
 * Criar sala de reuniao: `POST` `/api/v1/rooms`
 * Listar todas as salas: `GET` `/api/v1/rooms`
 * Buscar uma sala pelo Id: `GET` `/api/v1/rooms/{id}`
@@ -49,7 +49,7 @@ Link para acessar Swagger no projeto no [Heroku]: [https://meetingroom-backend.h
 
 ---
 
-####Frontend em Angular para este projeto: 
+#### Frontend em Angular para este projeto: 
 * [didifive/meetingroom-client]
 
 ---
