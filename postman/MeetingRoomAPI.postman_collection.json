@@ -6,300 +6,613 @@
 	},
 	"item": [
 		{
-			"name": "Create Room 1",
-			"event": [
+			"name": "Localhost",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Definir Projeto\",\r\n    \"link\":\"https://meet.google.com/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"10h\",\r\n    \"endHour\":\"11h\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create Room 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms"
-					]
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Projeto\",\r\n    \"link\":\"https://meet.google.com/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"10h\",\r\n    \"endHour\":\"11h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"11h\",\r\n    \"endHour\":\"13h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Room 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Finalizar Encontro da Reunião\",\r\n    \"link\":\"https://www.microsoft.com/teams\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"15h\",\r\n    \"endHour\":\"17h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List MeetingRooms",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MeetingRoom by Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"13h\",\r\n    \"endHour\":\"15h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/v1/rooms/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Create Room 2",
-			"event": [
+			"name": "Heroku",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"11h\",\r\n    \"endHour\":\"13h\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create Room 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Room 3",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Projeto\",\r\n    \"link\":\"https://meet.google.com/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"10h\",\r\n    \"endHour\":\"11h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Finalizar Encontro da Reunião\",\r\n    \"link\":\"https://www.microsoft.com/teams\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"15h\",\r\n    \"endHour\":\"17h\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "List MeetingRooms",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"11h\",\r\n    \"endHour\":\"13h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create Room 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get MeetingRoom by Id",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Finalizar Encontro da Reunião\",\r\n    \"link\":\"https://www.microsoft.com/teams\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"15h\",\r\n    \"endHour\":\"17h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "List MeetingRooms",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Room 2",
-			"event": [
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"13h\",\r\n    \"endHour\":\"15h\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Get MeetingRoom by Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Room 2",
-			"event": [
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms/2",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Update Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8082/api/v1/rooms/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
 					],
-					"port": "8082",
-					"path": [
-						"api",
-						"v1",
-						"rooms",
-						"2"
-					]
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Definir Responsabilidades\",\r\n    \"link\":\"https://zoom.us/\",\r\n    \"date\":\"25/12/2021\",\r\n    \"startHour\":\"13h\",\r\n    \"endHour\":\"15h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms/2",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Room 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://meetingroom-backend.herokuapp.com/api/v1/rooms/2",
+							"protocol": "https",
+							"host": [
+								"meetingroom-backend",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

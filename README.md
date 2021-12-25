@@ -29,9 +29,12 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 * Adicionado o arquivo `system.properties` com a versão do Java para que o projeto possa ser carregado corretamente no [Heroku];
 * Na classe "Room" foi adicionado o atributo `link` e anotações lombok `@AllArgsConstructor`, `@NoArgsConstructor` e `@Setter`;
 * Na classe "ErrorDetails" foi utilizado a anotação lombok `@Getter`;
-* Na classe "RoomController" o método `createRoom()` foi alterado para que o mesmo retorne o HTTP Status "201 Created".
+* Na classe "RoomController" o método `createRoom()` foi alterado para que o mesmo retorne o HTTP Status "201 Created";
+* Adicionada a dependência [Springdoc OpenAPI UI] para disponibilizar Swagger.
 
-Endpoints criados na API: 
+---
+
+####Endpoints criados na API: 
 * Criar sala de reuniao: `POST` `/api/v1/rooms`
 * Listar todas as salas: `GET` `/api/v1/rooms`
 * Buscar uma sala pelo Id: `GET` `/api/v1/rooms/{id}`
@@ -39,6 +42,21 @@ Endpoints criados na API:
 * Excluir uma sala pelo id: `DELETE` `/api/v1/rooms/{Id}`
 
 Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do Postman que já possuí modelos e testes de requisições HTTP. O arquivo está na pasta [postman](https://github.com/didifive/meetingroom-backend/tree/master/postman)
+
+Link para acessar Swagger no projeto carregado localmente: `http://localhost:8082/swagger-ui.html`
+
+Link para acessar Swagger no projeto no [Heroku]: [https://meetingroom-backend.herokuapp.com/swagger-ui.html](https://meetingroom-backend.herokuapp.com/swagger-ui.html)
+
+---
+
+####Frontend em Angular para este projeto: 
+* [didifive/meetingroom-client]
+
+---
+
+Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com)
+
+---
 
 Links Interessantes:
 * [Java 17 - Documentation]
@@ -50,6 +68,7 @@ Links Interessantes:
 * [Lombok]
 * [Maven]
 * [H2 Database]
+* [Springdoc OpenAPI UI]
 
 
 [dio.me]: https://dio.me/
@@ -63,4 +82,6 @@ Links Interessantes:
 [Maven]: https://maven.apache.org/
 [H2 Database]: https://h2database.com/
 [spring initializr]: https://start.spring.io/
-[spring]: https://spring.io/ 
+[spring]: https://spring.io/
+[didifive/meetingroom-client]: https://github.com/didifive/meetingroom-client
+[Springdoc OpenAPI UI]: https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui/1.5.12
