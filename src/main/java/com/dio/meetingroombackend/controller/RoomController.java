@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://meetingroomclient.netlify.app"})
 @RequestMapping("/api/v1")
 public class RoomController {
     @Autowired

@@ -54,7 +54,7 @@ Link para acessar Swagger no projeto no [Heroku]: [https://meetingroom-backend.h
 
 ---
 
-Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com)
+Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com/api/v1/rooms)
 
 ---
 
