@@ -57,7 +57,7 @@ Link para acessar Swagger no projeto no [Heroku]: [https://meetingroom-backend.h
 
 ---
 
-Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com/api/v1/rooms)
+Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com/api/v1/rooms)  
 _Observação: Quando o projeto fica sem receber requisições por um tempo, automaticamente o Heroku coloca ele em modo dormir (sleepy), portanto caso ocorra erro de timeout, basta tentar novamente que deve estar ativo._
 
 ---
