@@ -6,14 +6,14 @@
 Projeto desenvolvido com instruções de [Kamila Santos] na trilha de estudo do Bootcamp "Java Developer" da [dio.me].
 
 <p align="center">
-	<img alt="Repository language count" src="https://img.shields.io/github/languages/count/didifive/lab-banco-digital-oo">
-<a href="https://www.linkedin.com/in/falvojr/">
-		<img alt="Made by Didi" src="https://img.shields.io/badge/made%20by-Didi-blue">
-</a>	
-<a href="https://github.com/didifive/lab-banco-digital-oo/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/didifive/lab-banco-digital-oo?color=blue">
-</a>
-<img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
+	<img alt="Repository language count" src="https://img.shields.io/github/languages/count/didifive/meetingroom-backend">
+    <a href="https://www.linkedin.com/in/luis-carlos-zancanela/">
+        <img alt="Made by Didi" src="https://img.shields.io/badge/made%20by-Didi-blue">
+    </a>	
+    <a href="https://github.com/didifive/meetingroom-backend/commits/master">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/didifive/meetingroom-backend?color=blue">
+    </a>
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
 </p>
 
 <p align="center">
