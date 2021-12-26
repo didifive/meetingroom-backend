@@ -30,7 +30,8 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 * Na classe "Room" foi adicionado o atributo `link` e anotações lombok `@AllArgsConstructor`, `@NoArgsConstructor` e `@Setter`;
 * Na classe "ErrorDetails" foi utilizado a anotação lombok `@Getter`;
 * Na classe "RoomController" o método `createRoom()` foi alterado para que o mesmo retorne o HTTP Status "201 Created";
-* Adicionada a dependência [Springdoc OpenAPI UI] para disponibilizar Swagger.
+* Adicionada a dependência [Springdoc OpenAPI UI] para disponibilizar Swagger;
+* Para o projeto funcionar com o frontend hospedado no Netlify, foi necessário adicionar o domínio `https://meetingroomclient.netlify.app` em `@CrossOrigin` na classe `RoomController`. 
 
 ---
 
@@ -50,11 +51,14 @@ Link para acessar Swagger no projeto no [Heroku]: [https://meetingroom-backend.h
 ---
 
 #### Frontend em Angular para este projeto: 
-* [didifive/meetingroom-client]
+* Repositório: [didifive/meetingroom-client]
+* Link Projeto Online: https://meetingroomclient.netlify.app/  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53c4dc7a-b520-4621-9e9f-c94b3178c337/deploy-status)](https://app.netlify.com/sites/meetingroomclient/deploys)
 
 ---
 
 Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com/api/v1/rooms)
+_Observação: Quando o projeto fica sem receber requisições por um tempo, automaticamente o Heroku coloca ele em modo dormir (sleepy), portanto caso ocorra erro de timeout, basta tentar novamente que deve estar ativo._
 
 ---
 
@@ -64,6 +68,7 @@ Links Interessantes:
 * [spring]
 * [spring initializr]
 * [Heroku]
+* [Netlify]
 * [Jakarta Validation]
 * [Lombok]
 * [Maven]
@@ -85,3 +90,4 @@ Links Interessantes:
 [spring]: https://spring.io/
 [didifive/meetingroom-client]: https://github.com/didifive/meetingroom-client
 [Springdoc OpenAPI UI]: https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui/1.5.12
+[Netlify]:https://www.netlify.com/
